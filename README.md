@@ -50,3 +50,70 @@ The goal of ChessInC is to serve as a learning project for:
 # Tech Stack
 
 Language: C
+
+## Running on macOS
+
+This project was developed on Windows and includes a prebuilt `chess.exe`.
+macOS cannot run `.exe` files, but the project can be compiled easily because it is written in C using **raylib**, which is cross-platform.
+
+### 1. Install Homebrew (if you don't have it)
+
+Open Terminal and run:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 2. Install raylib
+
+```bash
+brew install raylib
+```
+
+### 3. Clone or download the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ChessInc.git
+cd ChessInc
+```
+
+Or download the ZIP from GitHub and open the folder in Terminal.
+
+### 4. Compile the project
+
+```bash
+gcc main.c Functions.c -o chess -lraylib
+```
+
+### 5. Run the game
+
+```bash
+./chess
+```
+
+If the assets folder is present in the project directory, the chess pieces will load automatically.
+
+### Folder structure required
+
+```
+ChessInc
+│
+├─ main.c
+├─ Functions.c
+├─ Functions.h
+├─ chess (compiled executable)
+└─ assets
+    ├─ white-pawn.png
+    ├─ white-rook.png
+    ├─ white-knight.png
+    ├─ white-bishop.png
+    ├─ white-queen.png
+    ├─ white-king.png
+    ├─ black-pawn.png
+    ├─ black-rook.png
+    ├─ black-knight.png
+    ├─ black-bishop.png
+    ├─ black-queen.png
+    └─ black-king.png
+```
+
