@@ -3,7 +3,7 @@
 ChessInc is a fully functional chess engine and graphical interface written in **C using Raylib**.  
 The project focuses on implementing **complete chess rules and move validation from scratch**, with a clean and modular architecture.
 
-The goal of ChessInc is to serve as a learning project for:
+The goal of ChessInC is to serve as a learning project for:
 
 - Game engine logic
 - Chess rule implementation
