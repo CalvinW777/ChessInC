@@ -49,4 +49,4 @@ The goal of ChessInC is to serve as a learning project for:
 
 # Tech Stack
 
-Language:
+Language: C
